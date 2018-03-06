@@ -1,0 +1,6 @@
+framework module Pods_ChatBOTester {
+  umbrella header "Pods-ChatBOTester-umbrella.h"
+
+  export *
+  module * { export * }
+}

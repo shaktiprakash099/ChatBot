@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RTk-Vy-fZE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BradleyHand-Bold.ttf">
+            <string>BradleyHandITCTT-Bold</string>
+        </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChatBOTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="GradientView" customModule="ChatBOTester" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loton is a hotel booking chatbot. Just begin by saying &quot;Hi!&quot;" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="un5-xg-7IO">
+                                <rect key="frame" x="5" y="69" width="365" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="dii-pf-R3N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="beX-MM-B0U">
+                                <rect key="frame" x="20" y="229" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7QA-8x-Rrd"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yrp-yS-4YA">
+                                <rect key="frame" x="25" y="274" width="325" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Send message to Loton">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zzb-p9-ZYW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="beX-MM-B0U" firstAttribute="top" secondItem="un5-xg-7IO" secondAttribute="bottom" constant="10" id="1Qa-BH-ljS"/>
+                            <constraint firstItem="beX-MM-B0U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6vL-wY-bHe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="beX-MM-B0U" secondAttribute="trailing" constant="20" id="8dz-sS-rQf"/>
+                            <constraint firstItem="un5-xg-7IO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="MJU-kn-JrY"/>
+                            <constraint firstItem="yrp-yS-4YA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="cIZ-ph-XZe"/>
+                            <constraint firstItem="yrp-yS-4YA" firstAttribute="top" secondItem="beX-MM-B0U" secondAttribute="bottom" constant="5" id="dR4-MH-bA6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="un5-xg-7IO" secondAttribute="trailing" constant="5" id="eol-4T-vWD"/>
+                            <constraint firstItem="un5-xg-7IO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="jQr-ny-pyo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yrp-yS-4YA" secondAttribute="trailing" constant="25" id="p7Y-E2-Gyb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="FirstColor">
+                                <color key="value" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="0.78986515410000002" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="SecondColor">
+                                <color key="value" red="0.01176470588" green="0.054901960780000002" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" id="zIX-Ef-baL">
+                        <nil key="title"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hQo-vU-wMd">
+                            <rect key="frame" x="146" y="7" width="83" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="Chip"/>
+                        </button>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="chipResponse" destination="un5-xg-7IO" id="9u3-YM-vSY"/>
+                        <outlet property="messageField" destination="beX-MM-B0U" id="tTi-gA-aXY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="-411"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Tn-jJ-0E5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RTk-Vy-fZE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wjk-Lx-CjR">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dZx-Ef-Oua" kind="relationship" relationship="rootViewController" id="Qg6-fo-P7d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I3R-Rd-q2i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1561" y="-150"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="G5y-wj-YNY">
+            <objects>
+                <viewController id="dZx-Ef-Oua" customClass="HomeViewController" customModule="ChatBOTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BFG-n1-0fV" customClass="GradientView" customModule="ChatBOTester" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cj-qx-hVp">
+                                <rect key="frame" x="20" y="308.5" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jq4-Tb-dlv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                <state key="normal" title="Chat with loton">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="exM-Tq-0Td" kind="show" id="tOF-yo-7U6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LV2-V8-lx8">
+                                <rect key="frame" x="20" y="368" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Loton India's first hotel booking chat bot" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIn-i2-1Sl">
+                                <rect key="frame" x="20" y="64" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cg2-wl-EIv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYE-As-jjK">
+                                <rect key="frame" x="20" y="409" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="luI-Ga-MO2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <state key="normal" title="Hang out with chat bot">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Ukg-cO-Ek7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nIn-i2-1Sl" firstAttribute="leading" secondItem="21v-iI-ZpQ" secondAttribute="leading" constant="20" id="1bU-QQ-yyk"/>
+                            <constraint firstItem="uYE-As-jjK" firstAttribute="top" secondItem="LV2-V8-lx8" secondAttribute="bottom" constant="20" id="3sj-hz-f41"/>
+                            <constraint firstItem="LV2-V8-lx8" firstAttribute="top" secondItem="4cj-qx-hVp" secondAttribute="bottom" constant="9.5" id="F6L-sC-Zmy"/>
+                            <constraint firstItem="21v-iI-ZpQ" firstAttribute="trailing" secondItem="4cj-qx-hVp" secondAttribute="trailing" constant="20" id="Ivf-C3-1mh"/>
+                            <constraint firstItem="21v-iI-ZpQ" firstAttribute="trailing" secondItem="nIn-i2-1Sl" secondAttribute="trailing" constant="20" id="P7v-Ug-O7x"/>
+                            <constraint firstItem="4cj-qx-hVp" firstAttribute="leading" secondItem="21v-iI-ZpQ" secondAttribute="leading" constant="20" id="RxN-xT-Zkt"/>
+                            <constraint firstItem="LV2-V8-lx8" firstAttribute="leading" secondItem="21v-iI-ZpQ" secondAttribute="leading" constant="20" id="UeJ-Sf-SVW"/>
+                            <constraint firstItem="nIn-i2-1Sl" firstAttribute="top" secondItem="21v-iI-ZpQ" secondAttribute="top" id="jPy-uu-2DH"/>
+                            <constraint firstItem="uYE-As-jjK" firstAttribute="leading" secondItem="21v-iI-ZpQ" secondAttribute="leading" constant="20" id="mg3-4r-EL2"/>
+                            <constraint firstItem="21v-iI-ZpQ" firstAttribute="trailing" secondItem="LV2-V8-lx8" secondAttribute="trailing" constant="20" id="oHU-9o-WHb"/>
+                            <constraint firstItem="21v-iI-ZpQ" firstAttribute="trailing" secondItem="uYE-As-jjK" secondAttribute="trailing" constant="20" id="rqk-Kf-BlA"/>
+                            <constraint firstItem="4cj-qx-hVp" firstAttribute="centerY" secondItem="BFG-n1-0fV" secondAttribute="centerY" id="rte-aF-Vcg"/>
+                            <constraint firstItem="4cj-qx-hVp" firstAttribute="centerX" secondItem="BFG-n1-0fV" secondAttribute="centerX" id="y66-O6-2NX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="21v-iI-ZpQ"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="FirstColor">
+                                <color key="value" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="0.78986515410000002" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="SecondColor">
+                                <color key="value" red="0.01176470588" green="0.054901960780000002" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" id="EML-gj-fbw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gs8-Zn-7cK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-676" y="-58"/>
+        </scene>
+        <!--start by saying Hii-->
+        <scene sceneID="Na9-6B-4af">
+            <objects>
+                <viewController id="exM-Tq-0Td" customClass="ChatViewController" customModule="ChatBOTester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ygL-fv-vIy" customClass="GradientView" customModule="ChatBOTester" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="BKP-EY-nim"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="FirstColor">
+                                <color key="value" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="0.78986515410000002" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="SecondColor">
+                                <color key="value" red="0.01176470588" green="0.054901960780000002" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" title="start by saying Hii" id="z8e-AN-UCN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wpe-2b-WEP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="300"/>
+        </scene>
+    </scenes>
+</document>
